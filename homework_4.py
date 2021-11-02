@@ -53,3 +53,27 @@
 # binary = input()
 # print(beautifulBinaryString(binary))
 # #########################################################################################################
+#  __ 5 __ # findAndReplacePattern
+# words = ["abc", "deq", "mee", "aqq", "dkd", "ccc"]
+# pattern = "abb"
+#
+# output = []
+# for word in words:
+#     dic = {}
+#     rev_dic = {}
+#     if len(word) != len(pattern):
+#         continue
+#     flag = True
+#     for i, x in enumerate(word):
+#         if not dic.get(x):
+#             dic[x] = pattern[i]
+#         elif dic[x] != pattern[i]:
+#             flag = False
+#         if not rev_dic.get(pattern[i]):
+#             rev_dic[pattern[i]] = x
+#         elif rev_dic[pattern[i]] != x:
+#             flag = False
+#     if flag:
+#         output.append(word)
+# print(output)
+# #########################################################################################################
