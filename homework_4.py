@@ -77,3 +77,24 @@
 #         output.append(word)
 # print(output)
 # #########################################################################################################
+#  __ 6 __ # findingUsersActiveMinutes
+# logs = [[1, 1], [2, 2], [2, 3]]
+# k = 4
+# logs = [[0, 5], [1, 2], [0, 2], [0, 5], [1, 3]]
+# k = 5
+# logs = [[305589003, 4136], [305589004, 4139], [305589004, 4141], [305589004, 4137], [305589001, 4139],
+#         [305589001, 4139]]
+# k = 6
+# output = []
+# dic1 = {}
+# for _ in range(k):
+#     output.append(0)
+# for x in logs:
+#     if not dic1.get(x[0]):
+#         dic1[x[0]] = [x[1]]
+#     else:
+#         if not x[1] in dic1[x[0]]:
+#             dic1[x[0]].append(x[1])
+# for key, value in dic1.items():
+#     output[len(value) - 1] += 1
+# print(output)
