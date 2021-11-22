@@ -116,8 +116,9 @@ class Matrix:
         s = '---------Math_Mull------\n'
         if self._columns == other._rows:
             if len(other._matrix) != 0:
-                other_trans_list = [[self._matrix[j][i] for j in range(len(self._matrix))] for i in
-                                    range(len(self._matrix[0]))]
+                other_trans_list = [[other._matrix[j][i] for j in range(len(other._matrix))] for i in
+                                    range(len(other._matrix[0]))]
+            print(other_trans_list)
             result = []
             for i in range(self._rows):
                 result.append([])
@@ -176,10 +177,10 @@ class Matrix:
 
 
 m1 = Matrix(filename='file.txt')
-m2 = Matrix(filename='file.txt')
-print(m1.traspose)
-print(m1.trace)
-print(m1.shape)
-print(m1)
-print(m1 * m2)
+m2 = Matrix(filename='file1.txt')
+# print(m1.traspose)
+# print(m1.trace)
+# print(m1.shape)
+# print(m1)
 print(m1 @ m2)
+# print(m1 @ m2)
